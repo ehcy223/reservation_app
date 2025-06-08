@@ -1,13 +1,13 @@
-.fixed-button {
-   position: fixed;
-   top: 1rem;
-   right: 1rem;
-   z-index: 1030;
+.fixed-buttons {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1030;
+  display: flex;
 }
 
 @media (max-width: 768px) {
-   .fixed-button {
-     position: fixed;
+   .fixed-buttons {
      top: auto;
      bottom: 1rem;
      right: 1rem;
