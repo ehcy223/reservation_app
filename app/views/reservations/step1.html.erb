@@ -1,0 +1,18 @@
+<h1>ステップ1: メニューを選択してください</h1>
+
+<%= form_with url: "/reservations/step1", method: :post do %>
+  <% @menu.each do |menu| %>
+    <div>
+      <%= radio_button_tag :menu, menu %>
+      <%= label_tag :menu, menu, value: menu %>
+    </div>
+  <% end %>
+
+  <div>
+    <%= submit_tag "次へ" %>
+  </div>
+<% end %>
+
+<% if flash[:alert] %>
+  <p style="color:red;"><%= flash[:alert] %></p>
+<% end %>

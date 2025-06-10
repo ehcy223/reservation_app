@@ -1,2 +1,27 @@
-<h1>Reservations#new</h1>
-<p>Find me in app/views/reservations/new.html.erb</p>
+<h1>初診予約のご案内</h1>
+
+<div style="border: 2px solid #999; padding: 16px; border-radius: 8px; background-color: #f9f9f9; margin-bottom: 20px;">
+  <p><strong>医院からのメッセージ</strong></p>
+  <p>当医院をお選びいただきまして、誠にありがとうございます。</p>
+  <p>希望の時間に空きが無い場合は、お電話にてご相談ください。</p>
+  <p>当日予約はお電話にて随時承っております。<br>
+     ※当日午前0時以降はお電話のご予約になります。<br>
+     前日にはほぼご予約が埋まります。<br>
+     <strong style="color: red;">WEB予約はお早めに！</strong>
+  </p>
+</div>
+
+<div style="border: 2px solid #999; padding: 16px; border-radius: 8px; background-color: #fffbe0; margin-bottom: 20px;">
+  <p><strong>初めて来院の方</strong></p>
+  <p><strong style="color: red;">◎WEB予約は初診の方のみのご案内になります◎</strong></p>
+  <ul>
+    <li>再診の方はお電話にてご予約承っております。</li>
+    <li>歯石取り、クリーニングのご予約はお電話、または来院時窓口にて承っております。</li>
+    <li>歯科矯正および歯並びの相談に関しては、診察日が決まっておりますので、ご予約はお電話にてお願いします。</li>
+    <li>矯正歯科からの抜歯依頼、矯正治療のための抜歯に関してはお断りしております。</li>
+  </ul>
+</div>
+
+<div style="text-align: center;">
+  <%= link_to "初診予約へ進む", reservations_step1_path, class: "btn btn-primary", style: "padding: 10px 20px; font-size: 18px;" %>
+</div>
